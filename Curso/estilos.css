@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth;}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1 {font-size: 3em;}
+
+h2 {font-size: 2.7em;}
+
+h3 {font-size: 2em;}
+
+p {font-size: 1.25em;}
+
+ul {list-style: none;}
+
+li {font-size: 1.25em;}
+
+button {
+    transition: 1s;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    color: white;
+    background-color: rgb(0, 0, 220);
+}
+
+button:hover {
+    background-color: rgb(19, 5, 58);
+    transform: scale(1.2);
+}
+
+.color-acento {
+    color: rgb(0, 0, 194);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 194);
+    font-size: 1.9em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 7px;
+    font-weight: bold;
+    color: rgb(0, 0, 0)
+}
+
+header a:hover {
+    color: blue;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Img/FondoAki.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: rgb(240, 240, 240);
+}
+
+#somos-proya .container {
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+
+#nuestros-programas {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+  
+}
+
+#nuestros-programas .container {
+    padding: 150px 60px;
+}
+
+#nuestros-programas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p {
+    display: none;
+}
+
+#nuestros-programas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 40px 0px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+.carta:nth-child(1) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Img/Katana.jpg")
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Img/Demonio.jpg")
+}
+
+.carta:last-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Img/arma.jpg")
+}
+
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#caracteristicas li {
+    margin: 18px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 70vh;
+}
+
+#final button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+footer {
+    background-color: white;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1000px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+
+
+    #somos-proya .container {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #somos-proya .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2 {
+        margin-top: 0px;
+    }
+
+    #somos-proya .contenedordeimagen {
+        background-image: url("Img/curso.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-programas p {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h3 {
+        margin-top: 0;
+    }
+
+    #caracteristicas {
+        background-image: url("Img/Caracteristicas.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container {
+        text-align: initial;
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+
+    #nuestros-programas .programas {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
